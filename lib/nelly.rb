@@ -1,5 +1,4 @@
-require "nelly/version"
+require 'nelly/acts_as_cacheable'
 
 module Nelly
-  # Your code goes here...
 end
