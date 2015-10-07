@@ -4,5 +4,4 @@ ActiveRecord::Schema.define do
   create_table :posts, force: true do |t|
     t.timestamps null: false
   end
-
 end

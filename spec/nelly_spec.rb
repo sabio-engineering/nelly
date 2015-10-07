@@ -10,12 +10,11 @@ class Comment < ActiveRecord::Base
 end
 
 describe Post do
-
   describe '.cache_key' do
     let(:updated_at) { Time.now }
     let!(:cacheable_object) { Post.create!(updated_at: updated_at) }
 
-    subject{ Post.cache_key }
+    subject { Post.cache_key }
 
     it 'returns a cache key' do
       max_updated_at = updated_at.utc.to_s(:number)
